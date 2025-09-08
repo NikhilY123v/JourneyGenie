@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JourneyGenie</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; color: #333; }
+    header { background: #4a90e2; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; }
+    nav { margin-top: .5rem; }
+    nav a { color: #fff; margin-left: 1rem; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+    nav a:hover { color: orange; }
+    section { padding: 3rem 2rem; }
+    .hero { background: url('https://picsum.photos/1200/400?travel') no-repeat center/cover; color: #fff; text-align: center; padding: 5rem 2rem; }
+    .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .feature { background: #fff; margin: 1rem 0; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
+    .feature h3 { color: #4a90e2; }
+    footer { background: #222; color: #aaa; padding: 1rem 2rem; text-align: center; }
+    .btn { display: inline-block; padding: 0.6rem 1rem; background: #4a90e2; color: #fff; border-radius: 5px; text-decoration: none; }
+    .calendar, .badges, .buddy-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.1); flex: 1 1 calc(33% - 1rem); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JourneyGenie</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#ai">AI Assistant</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#gamification">Gamification</a>
+      <a href="#festivals">Festivals</a>
+      <a href="#social">Travel Buddy</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Plan Smarter, Travel Better 🌍</h2>
+    <p>Your AI-powered personalized travel companion</p>
+    <a href="#ai" class="btn">Explore Features</a>
+  </section>
+
+  <section id="ai">
+    <div class="feature">
+      <h3>🤖 Hyper-Personalized AI Travel Assistant</h3>
+      <p>Our AI understands your budget, health preferences, and habits to recommend the best itineraries, hotels, and dining options tailored just for you.</p>
+      <form>
+        <input type="text" placeholder="Enter Destination" required> 
+        <input type="number" placeholder="Budget (₹)" required>
+        <button type="submit" class="btn">Generate Plan</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="experiences">
+    <div class="feature">
+      <h3>🏡 Local Experiences Marketplace</h3>
+      <p>Discover and book unique activities offered by locals, from cultural shows to adventure sports. Empowering rural communities through tourism.</p>
+      <div class="card">Cooking with a Rajasthani Family</div>
+      <div class="card">Trek in Jharkhand Hills</div>
+      <div class="card">Traditional Handicraft Workshop</div>
+    </div>
+  </section>
+
+  <section id="gamification">
+    <div class="feature">
+      <h3>🎮 Gamification of Tourism</h3>
+      <p>Earn badges and rewards for exploring destinations and heritage sites.</p>
+      <div class="badges">
+        <div class="card">🏅 Cultural Explorer</div>
+        <div class="card">🌄 Adventure Seeker</div>
+        <div class="card">🌱 Eco Traveler</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="festivals">
+    <div class="feature">
+      <h3>🎉 Integrated Festival & Event Tourism</h3>
+      <p>Plan trips around cultural fairs, religious festivals, and concerts with our AI-powered event calendar.</p>
+      <div class="calendar">
+        <div class="card">Durga Puja – Kolkata</div>
+        <div class="card">Pushkar Camel Fair – Rajasthan</div>
+        <div class="card">Hornbill Festival – Nagaland</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="social">
+    <div class="feature">
+      <h3>🤝 Social Travel Network</h3>
+      <p>Connect with fellow travelers using the Travel Buddy feature. Share trips, cabs, and experiences.</p>
+      <div class="buddy-list">
+        <div class="card">Rahul (Delhi → Manali)</div>
+        <div class="card">Ananya (Solo in Goa)</div>
+        <div class="card">Amit (Exploring Varanasi)</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 JourneyGenie | Designed for Smart India Hackathon</p>
+  </footer>
+
+  <script>
+    // Example JavaScript: simple form handler for AI Travel Plan
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("✨ Your personalized travel plan is being generated!");
+    });
+  </script>
+</body>
+</html>
